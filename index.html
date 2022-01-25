@@ -10,10 +10,10 @@
   <body>
 
 <header class="page-header">
-    <a class="header-logo" href="index.html">
-<!-- в ссылке указан href="index.html", так как при нажатии на логотип происходит обновление страницы -->
-      <img class="header-logo-link" src="#" alt="Логотип Седона">
-    </a>
+  <a class="header-logo">
+    <img class="header-logo-link" src="#" alt="Логотип Седона">
+<!-- в ссылке на главную страницу не указан href, так как она ведёт на саму себя -->
+  </a>
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
@@ -51,7 +51,6 @@
   <section class="block-welcome-main">
     <h1 class="visually-hidden">Гостиницы Гранд-каньон Седона</h1>
       <img class="block-welcome-title" src="#" alt="Welcome Sedona">
-        <img class="block-welcome-divider" src="#" alt="Делитель">
   </section>
   <section class="description-main">
     <h2 class="description-main-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
@@ -59,13 +58,11 @@
   </section>
   <section class="description-block">
     <div class="description-item description-blue">
-      <h2 class="description-title">Настоящий <br>городок</h2>
-        <span class="description-number">— №1 —</span>
-          <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <h2 class="description-title">Настоящий городок</h2>
+        <p class="description-number">— №1 —</p>
+        <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
     </div>
-    <div class="description-picture">
-      <img src="#" alt="Вид на седону№1">
-    </div>
+      <img class="description-picture" src="#" alt="Вид на седону№1">
   </section>
   <section class="advantages-block">
     <h2 class="visually-hidden">Преимущства</h2>
@@ -88,30 +85,28 @@
       </ul>
   </section>
   <section class="description-block">
-    <div class="description-picture">
-      <img src="#" alt="Вид на седону№2">
-    </div>
-    <div class="description-item description-blue">
-      <h2 class="description-title">Там есть <br> мост дьявола</h2>
-        <span class="description-number">— №2 —</span>
+    <img class="description-picture" src="#" alt="Вид на седону№2">
+      <div class="description-item description-blue">
+        <h2 class="description-title">Там есть мост дьявола</h2>
+          <p class="description-number">— №2 —</p>
           <p class="description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
     </div>
   </section>
   <section class="description-block">
     <div class="description-item description-white">
-      <h2 class="description-title">Небольшая <br> площадь</h2>
-        <span class="description-number">— №3 —</span>
-          <p class="description-text">Все достопримечательности находятся очень близко</p>
+      <h2 class="description-title">Небольшая площадь</h2>
+        <p class="description-number">— №3 —</p>
+        <p class="description-text">Все достопримечательности находятся очень близко</p>
     </div>
     <div class="description-item">
-      <h2 class="description-title">Красивая <br> дорога</h2>
-        <span class="description-number">— №4 —</span>
-          <p class="description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      <h2 class="description-title">Красивая дорога</h2>
+        <p class="description-number">— №4 —</p>
+        <p class="description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
     <div class="description-item">
-      <h2 class="description-title">Мало <br> туристов</h2>
-        <span class="description-number">— №5 —</span>
-          <p class="description-text">Большинство едет в Гранд Каньон и толпится там</p>
+      <h2 class="description-title">Мало туристов</h2>
+        <p class="description-number">— №5 —</p>
+        <p class="description-text">Большинство едет в Гранд Каньон и толпится там</p>
     </div>
   </section>
   <section class="interest-block">
@@ -125,9 +120,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email"> Ваш Email</label>
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">
-                <span>Подписаться</span>
-              </button>
+              <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
   </section>
 </main>
@@ -157,11 +150,9 @@
     <h2 class="visually-hidden">Контакты</h2>
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </section>
-  <div>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-      <img src="#" alt="Логотип HTMLAcademy">
+      <img class="htmlacademy-logo" src="#" alt="Логотип HTMLAcademy">
     </a>
-  </div>
 </footer>
 
 </body>
