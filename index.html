@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
 
   <body>
-
 <header class="page-header">
   <a class="header-logo">
     <img class="header-logo-link" src="images/header/logo-sedona.svg" width="139" height="70" alt="Логотип Седона">
@@ -41,7 +41,7 @@
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+        <a class="button navigation-link" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -65,7 +65,7 @@
       <img class="description-picture" src="images/photo-sedona-1.jpg" width="800" height="384" alt="Вид на седону№1">
   </section>
   <section class="advantages-block">
-    <h2 class="visually-hidden">Преимущства</h2>
+    <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item">
           <img class="advantages-icon" src="images/icon-house.svg" width="75" height="72" alt="Жилье">
@@ -75,7 +75,7 @@
         <li class="advantages-item">
           <img class="advantages-icon" src="images/icon-food.svg" width="74" height="70" alt="Еда">
             <h3 class="advantages-title">Еда</h3>
-              <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="advantages-item">
           <img class="advantages-icon" src="images/icon-present.svg" width="64" height="76" alt="Сувениры">
@@ -93,7 +93,7 @@
     </div>
   </section>
   <section class="description-block">
-    <div class="description-item description-white">
+    <div class="description-item">
       <h2 class="description-title">Небольшая площадь</h2>
         <p class="description-number">— №3 —</p>
         <p class="description-text">Все достопримечательности находятся очень близко</p>
@@ -112,13 +112,13 @@
   <section class="interest-block">
     <h2 class="interest-title">Заинтересовались?</h2>
       <p class="interest-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="interest-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a class=" button interest-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
   </section>
   <section class="newsletter">
     <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-text">Только полезная информация и никакого спама,честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email"> Ваш Email</label>
+          <label for="newsletter-email"> Ваш e-mail</label>
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
@@ -154,6 +154,5 @@
       <img class="htmlacademy-logo" src="images/footer/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTMLAcademy">
     </a>
 </footer>
-
 </body>
 </html>
