@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button navigation-link" href="#">Хочу сюда!</a>
+          <a class="button navigation-button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -61,7 +61,7 @@
         </li>
       </ul>
   </header>
-  <h2 class="visually-hidden" hidden> Фильтр жилья </h2>
+  <h2 class="visually-hidden"> Фильтр жилья </h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
       <fieldset class="catalog-filter-group">
@@ -108,12 +108,13 @@
             <label class="price-control">
             <input class="max-price" type="number" value="3000">До</label>
           </div>
-      </fieldset>
-        <button class="button button-apply" type="submit">Применить</button>
+      </fieldset> 
+      <div class="catalog-filter-button">
+         <button class="button button-apply" type="submit">Применить</button>
         <button class="button button-reset" type="reset">Сбросить</button>
-    </form>
-  </section>
-
+      </div>
+      </form>
+   </section>
   <section class="catalog-products">
     <div class="container-products-select">
     <h3 class="catalog-products-title">Найдено гостиниц: 38 </h3>
@@ -191,9 +192,8 @@
           </li>
         </ul>
        </div>
-          <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-       
-        <div class="container-pagination">
+       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+         <div class="container-pagination">
          <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -208,9 +208,6 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
-        </li>
-        <li class="pagination-item">
         <a class="pagination-link pagination-next" href="#">...</a>
         </li>
         <li class="pagination-item">
@@ -218,7 +215,7 @@
         </li>
         </ul>
         <h3 class="namber-product">Гостиниц на странице: </h3>
-            <select class="namber-product-title" aria-label="Гостинец на странице">
+            <select class="namber-product-title" aria-label="Гостиниц на странице">
             <option value="four">4</option>
             </select>
           </div>
