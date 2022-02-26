@@ -87,6 +87,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   line-height: 26px;
   font-weight: 700;
@@ -96,17 +97,79 @@ body {
   padding: 20px 17px;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
 .navigation-user .navigation-link {
   min-width: 42px;
   min-height: 66px;
   padding: 0;
 }
+
 .navigation-user .navigation-item:nth-child(3) {
   margin-left: 20px;
   padding: 0;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.navigation-link:hover {
+  color: #756257;
+}
+.navigation-link:focus {
+  fill: #756257;
+  outline: #83b3d3 solid 3px;
+  border-radius: 10px;
+}
+
+.navigation-link:active {
+  color: #756257;
+}
+
+.navigation-icon:hover {
+  fill: #756257;
+}
+.navigation-icon:focus {
+  fill: #756257;
+  outline: #83b3d3 solid 3px;
+  border-radius: 10px;
+}
+
+.navigation-icon:active {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.wishlist-link {
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  background: #7db550;
+  border-radius: 9.5px;
+  padding: 3px;
+  color: #ffffff;
+  top: 12px;
+  min-width: 14px;
+  position: absolute;
+  justify-content: center;
+  left: 24px;
+}
+
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -116,8 +179,23 @@ body {
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
   cursor: pointer;
   padding: 8px 15px;
+}
+
+.button:hover {
+  background: #615048;
+}
+
+.button:focus {
+  background: #615048;
+  outline: #83b3d3 solid 3px;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #615048;
 }
 
 .block-welcome-main {
@@ -247,6 +325,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   padding-top: 0;
   padding-bottom: 29px;
 }
@@ -257,6 +336,7 @@ body {
   color: #333333;
   padding-top: 0;
   padding-bottom: 56px;
+  margin: 0;
 }
 
 .interest-search {
@@ -313,6 +393,22 @@ body {
   font-size: 20px;
   background: #83b3d3;
   border-radius: 0px 10px 10px 0px;
+  padding: 20px 35px;
+}
+
+.newsletter-button:hover {
+  background: #68a2ca;
+}
+
+.newsletter-button:focus {
+  background: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.newsletter-button:active {
+  background: #68a2ca;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .page-footer {
@@ -323,13 +419,12 @@ body {
 }
 
 .footer-social {
-  width: 120px;
-  margin-right: 61px;
+  margin-right: auto;
 }
 
 .footer-social-list {
   display: flex;
-  align-items: center;
+  width: 120px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -337,26 +432,78 @@ body {
 }
 
 .footer-social-item {
-  width: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  min-width: 40px;
+  min-height: 40px;
 }
 
-.footer-social-item:nth-child(3n) {
-  margin-right: 0;
+.footer-social-link {
+  fill: #83b3d3;
+  padding: 20px;
+}
+
+.footer-icon {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  margin: auto;
+}
+.footer-social-link:hover {
+  fill: #68a2ca;
+}
+
+.footer-social-link:focus {
+  fill: #68a2ca;
+  outline: #83b3d3 solid 3px;
+  border-radius: 10px;
+}
+
+.footer-social-link:active {
+  fill: rgba(104, 162, 202, 0.5);
 }
 
 .footer-contacts {
   width: 720px;
-  margin-right: 53px;
+  margin-right: auto;
 }
 
 .footer-contacts-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-contacts-phone:hover {
+  color: #756257;
+}
+
+.footer-contacts-phone:focus {
+  color: #756257;
+  outline: #83b3d3 solid 3px;
+  border-radius: 10px;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 98, 87, 0.5);
+}
+
+.htmlacademy-link:hover {
+  fill: #756257;
+}
+
+.htmlacademy-link:focus {
+  fill: #756257;
+  outline: #83b3d3 solid 3px;
+  border-radius: 10px;
+}
+
+.htmlacademy-link:active {
+  fill: rgba(117, 98, 87, 0.5);
 }
 
 .catalog-housing {
