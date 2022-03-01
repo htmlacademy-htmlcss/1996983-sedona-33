@@ -94,7 +94,7 @@ body {
   font-size: 20px;
   color: #000000;
   text-decoration: none;
-  padding: 20px 17px;
+  padding: 22px 17px 18px 17px;
 }
 
 .navigation-link-current::before {
@@ -142,6 +142,7 @@ body {
 }
 
 .wishlist-link {
+  font-weight: normal;
   font-size: 10px;
   line-height: 13px;
   text-align: center;
@@ -149,7 +150,7 @@ body {
   border-radius: 9.5px;
   padding: 3px;
   color: #ffffff;
-  top: 10px;
+  top: 16px;
   min-width: 14px;
   position: absolute;
   justify-content: center;
@@ -264,6 +265,9 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 30px;
+}
+.description-blue .description-number {
+  color: #ffffff;
 }
 
 .description-text {
