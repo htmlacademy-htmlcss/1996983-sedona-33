@@ -106,29 +106,17 @@ body {
   background-color: #756257;
   content: "";
 }
-.navigation-user .navigation-link {
+
+.navigation-user {
   min-width: 42px;
   min-height: 66px;
   padding: 0;
 }
 
-.navigation-user .navigation-item:nth-child(3) {
-  margin-left: 20px;
-  padding: 0;
-}
-
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-
 .navigation-link:hover {
   color: #756257;
 }
+
 .navigation-link:focus {
   fill: #756257;
   outline: #83b3d3 solid 3px;
@@ -136,12 +124,13 @@ body {
 }
 
 .navigation-link:active {
-  color: #756257;
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-icon:hover {
   fill: #756257;
 }
+
 .navigation-icon:focus {
   fill: #756257;
   outline: #83b3d3 solid 3px;
@@ -149,8 +138,7 @@ body {
 }
 
 .navigation-icon:active {
-  fill: #756257;
-  opacity: 0.3;
+  fill: rgba(117, 98, 87, 0.3);
 }
 
 .wishlist-link {
@@ -161,11 +149,11 @@ body {
   border-radius: 9.5px;
   padding: 3px;
   color: #ffffff;
-  top: 12px;
+  top: 10px;
   min-width: 14px;
   position: absolute;
   justify-content: center;
-  left: 24px;
+  left: 30px;
 }
 
 .button {
@@ -182,6 +170,10 @@ body {
   border: none;
   cursor: pointer;
   padding: 8px 15px;
+}
+
+.navigation-button {
+  margin-left: 20px;
 }
 
 .button:hover {
@@ -268,6 +260,7 @@ body {
 }
 
 .description-number {
+  color: #333333;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 30px;
@@ -310,6 +303,7 @@ body {
 }
 
 .advantages-description {
+  color: #333333;
   margin: 0;
 }
 
