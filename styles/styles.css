@@ -175,6 +175,7 @@ body {
 
 .navigation-button {
   margin-left: 20px;
+  outline-offset: 0;
 }
 
 .button:hover {
@@ -345,6 +346,7 @@ body {
   border-radius: 10px;
   padding: 12px 150px;
   display: block;
+  outline-offset: 0;
 }
 
 .newsletter {
@@ -559,7 +561,7 @@ body {
 .breadcrumbs-navigation-icon {
   fill: #ffffff;
   opacity: 0.3;
-  padding: 0 8px;
+  margin: 0 8px;
 }
 
 .breadcrumbs-link:hover {
@@ -567,6 +569,7 @@ body {
 }
 
 .breadcrumbs-link:focus {
+  color: #ffffff;
   border-radius: 4px;
   outline: #83b3d3 solid 3px;
 }
@@ -629,13 +632,12 @@ body {
   outline: 2px solid #e6e6e6;
   background: none;
   line-height: 21px;
-  padding: 11.5px 14px;
+  padding: 15px 16px 12px 16px;
   margin-left: 8px;
 }
 
 .button-sort-current {
   outline: 2px solid #000000;
-  outline-offset: -2px;
 }
 
 .button-sort:hover {
@@ -684,6 +686,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+  outline-offset: 0;
 }
 
 .product-image-card:hover {
@@ -695,7 +698,7 @@ body {
 }
 
 .product-image-card:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .product-card-title {
@@ -727,12 +730,14 @@ body {
 .product-card-link {
   padding: 9px 23px;
   justify-self: start;
+  outline-offset: 0;
 }
 
 .product-card-button {
   background: #83b3d3;
   padding: 7px 18px;
   justify-self: end;
+  outline-offset: 0;
 }
 
 .product-card-button:hover {
@@ -747,16 +752,16 @@ body {
 .product-card-button:active {
   background: #68a2ca;
   outline: #756257 solid 1px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 .product-card-button-favourites {
-  border: 1px solid #000000;
-  background: #6c9e42;
+  outline: #000000 solid 1px;
+  background: #7db54f;
+  outline-offset: 0;
 }
 
 .product-card-button-favourites:hover {
   background: #6c9e42;
-  border: none;
 }
 
 .product-card-button-favourites:focus {
@@ -766,7 +771,7 @@ body {
 
 .product-card-button-favourites:active {
   background: #6c9e42;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating-result-text {
@@ -809,7 +814,7 @@ body {
 }
 
 .button-apply:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -822,7 +827,7 @@ body {
 
 .button-reset:hover {
   background: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 .button-reset:focus {
   background: none;
@@ -831,7 +836,7 @@ body {
 
 .button-reset:active {
   background: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 .rating-result {
   justify-self: start;
@@ -856,9 +861,10 @@ body {
   background: #68a2ca;
   outline: #756257 solid 3px;
 }
+
 .pagination-show-more:active {
   background: #68a2ca;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 .pagination {
   padding: 0;
@@ -880,6 +886,7 @@ body {
   cursor: pointer;
   width: 55px;
   padding: 15px 18px;
+  outline-offset: 0;
 }
 
 .pagination-link:hover {
