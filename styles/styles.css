@@ -184,9 +184,10 @@ img {
 }
 
 .navigation-button {
+  width: 100px;
   margin-left: 18px;
   outline-offset: 0;
-  padding: 8px 34px;
+  padding: 8px 30px;
 }
 
 .button:hover {
@@ -209,10 +210,10 @@ img {
   background-color: rgba(37, 115, 167, 0.418);
   background-image: url("../images/divider.svg"),
     url("../images/background-welcome-sedona.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 428px, 0 0;
   padding-top: 50px;
-  padding-bottom: 79px;
+  padding-bottom: 78px;
 }
 
 .description-main {
@@ -403,6 +404,10 @@ img {
   border: none;
   padding-left: 20px;
   background: #f2f2f2;
+  font-family: "PT Sans";
+  line-height: 26px;
+  font-size: 18px;
+  color: #000000;
 }
 
 .field::placeholder {
@@ -410,6 +415,7 @@ img {
   color: #000000;
   opacity: 0.6;
   font-size: 18px;
+  font-family: "PT Sans";
 }
 
 .field:hover {
@@ -419,6 +425,7 @@ img {
 .field:focus {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
+  outline-offset: -3px;
 }
 /* при ошибке */
 
@@ -908,7 +915,6 @@ input.max-price:active {
 .select-control {
   margin-right: 80px;
   padding: 12px 10px 12px 19px;
-  line-height: 23px;
   border: 2px solid #e6e6e6;
   background-image: url(../images/dropdown.svg);
   background-repeat: no-repeat;
@@ -917,7 +923,9 @@ input.max-price:active {
   border-radius: 4px;
   width: 285px;
   cursor: pointer;
-  background: #ffffff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .select-control:hover {
@@ -1209,13 +1217,16 @@ input.max-price:active {
   line-height: 26px;
   font-weight: 700;
   cursor: pointer;
-  max-width: 55px;
+  min-width: 55px;
   padding: 15px 22px;
   outline-offset: 0;
   text-align: center;
 }
 .pagination-two-digit {
-  padding: 15px 17px;
+  padding: 15px 10px;
+}
+.pagination-next {
+  padding: 15px 10px;
 }
 
 .pagination-link:hover {
@@ -1243,26 +1254,26 @@ input.max-price:active {
 }
 
 .namber-product {
-  line-height: 23px;
   color: #333333;
-  font-weight: 400;
   line-height: 23px;
   font-size: 18px;
   margin-top: 10px;
 }
 
 .namber-product-title {
-  padding: 12px 13px 13px 15px;
-  line-height: 23px;
+  padding: 10px 13px 13px 15px;
   border: 2px solid #e6e6e6;
   background-image: url(../images/dropdown.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
   border-radius: 4px;
-  margin-left: 50px;
+  margin-left: 54px;
   width: 160px;
   cursor: pointer;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .namber-product-title:hover {
@@ -1375,9 +1386,11 @@ input.max-price:active {
   text-align: start;
 }
 
-.form-label::placeholder {
+.field-date::placeholder {
+  font-family: "PT Sans";
   font-weight: 700;
   line-height: 40px;
+  font-size: 18px;
   color: #000000;
   opacity: 0.6;
 }
@@ -1388,6 +1401,8 @@ input.max-price:active {
   padding: 5px 50px;
   padding-left: 20px;
   border-radius: 4px;
+  font-family: "PT Sans";
+  font-size: 18px;
   font-weight: 700;
   line-height: 40px;
   color: #000000;
@@ -1422,7 +1437,8 @@ input.max-price:active {
   padding-left: 155px;
   text-align: start;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 27px;
+  margin-bottom: 13px;
 }
 
 .field-info-false {
@@ -1443,8 +1459,9 @@ input.max-price:active {
   line-height: 40px;
   margin-right: 22px;
 }
+
 .group-children {
-  margin-left: 50px;
+  margin-left: 58px;
   margin-right: 0;
 }
 
@@ -1462,7 +1479,7 @@ input.max-price:active {
 }
 
 .button-minus {
-  padding: 12px 2px 20px 18px;
+  padding: 12px 24px 20px 18px;
   border: none;
   background: none;
   cursor: pointer;
@@ -1470,7 +1487,7 @@ input.max-price:active {
 }
 
 .button-plus {
-  padding: 16px 18px 16px 2px;
+  padding: 16px 18px 16px 11px;
   border: none;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -1497,8 +1514,10 @@ input.max-price:active {
 }
 
 .count-buttons-input {
-  width: 50px;
+  width: 30px;
   display: inline-block;
+  font-family: "PT Sans";
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   line-height: 40px;
@@ -1558,7 +1577,7 @@ input.max-price:active {
   font-weight: 400;
   color: #ffffff;
   text-transform: none;
-  padding: 15px 22px;
+  padding: 20px 22px 22px 22px;
   border-radius: 10px;
   text-align: start;
   display: block;
